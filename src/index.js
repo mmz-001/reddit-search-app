@@ -49,7 +49,7 @@ function showPosts(posts) {
     'https://www.redditinc.com/assets/images/site/redditinc_external_graphic.png'
 
   // Add card to containerDiv for each post
-  posts.forEach((post, index, arr) => {
+  posts.forEach((post, index) => {
     const postDiv = document.createElement('div')
 
     postDiv.className = 'col'

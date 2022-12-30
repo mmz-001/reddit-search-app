@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "lint": "eslint --ext .js",
     "clean": "rimraf {dist,.parcel-cache}",
     "start": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html --public-url ./"

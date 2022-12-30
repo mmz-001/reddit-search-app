@@ -9,7 +9,7 @@
     "build": "parcel build ./src/index.html --public-url ./"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
     "eslint": "^8.30.0",

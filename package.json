@@ -2,11 +2,10 @@
   "name": "reddit-search-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "clean": "rimraf dist",
+    "clean": "rimraf {dist,.parcel-cache}",
     "start": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html"
+    "build": "parcel build ./src/index.html --public-url ./"
   },
   "author": "",
   "license": "ISC",

@@ -2,8 +2,8 @@ const searchPosts = (query, count, sortBy) => {
   // Search posts with specified query with max results limited to count
   // and sorted by sortBy
 
-  baseURL = `https://www.reddit.com`
-  posts = []
+  const baseURL = `https://www.reddit.com`
+  const posts = []
   return fetch(
     `${baseURL}/search.json?q=${query}&sort=${sortBy}&limit=${count}`
   )
@@ -15,7 +15,7 @@ const searchPosts = (query, count, sortBy) => {
           ? data.url
           : null
 
-        post = {
+        const post = {
           title: data.title,
           img_url: data.url,
           url: `${baseURL}${data.permalink}`,
